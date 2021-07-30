@@ -125,13 +125,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'STATIC')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'home/static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -139,6 +132,13 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'home/static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'home/static')]
 
 # Media folder settings 
 MEDIA_URL = '/media/'
